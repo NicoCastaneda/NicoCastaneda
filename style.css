@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style: none;
+}
+
+
 html {
   font-size: 62.5%;
   font-family: monospace;
@@ -6,10 +15,8 @@ html {
 
 body {
   background-color: #131318;
-  margin-top: 60px;
   display: flex;
-  flex-direction: column  ;
-  min-height:auto
+  flex-direction: column ;
 }
 
 .header {
@@ -52,7 +59,6 @@ body {
   width: 40px;
   cursor: pointer;
   margin: auto;
-  margin-right: 40px;
   display: block;
   height: calc(4px * 3 + 11px * 2);
 }
@@ -115,10 +121,10 @@ body {
 /* End Menu Icon & Navbar Styles */
 
 .mainText {
+  margin-top: 70px;
   font-size: 2.2rem;
   color: #ffffff;
   text-align: center;
-  margin-top: 2%;
 }
 
 .terminal-loader {
