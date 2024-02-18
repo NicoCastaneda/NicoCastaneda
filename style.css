@@ -15,7 +15,7 @@ html {
 body {
   background-color: #131318;
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
 }
 
 .header {
@@ -201,13 +201,19 @@ body {
 
 /*Fin de css Animación loading status*/
 
+
 /*Seccion curriculum*/
+.curriculum-container {
+  padding: 30px;
+}
 .curriculum {
   margin: 50px auto;
   max-width: 800px;
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 20px 30px; /* Ajuste del padding */
+  background-color: #333;
   border-radius: 8px;
+  font-size: 2em;
+  color: #fff;
 }
 
 .resume h2 {
@@ -216,26 +222,36 @@ body {
 }
 
 .resume-item {
-  display: grid;
-  grid-template-columns: 1fr 2fr; /* Divide en dos columnas, la primera 1/3 y la segunda 2/3 */
-  gap: 20px; /* Espacio entre las dos columnas */
+  flex: 1;
+  margin-right: 20px;
 }
 
-.resume-item .resume-details {
-  /* Estilos para la columna de detalles */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.resume-item .resume-photo {
-  /* Estilos para la columna de la foto */
+.resume-photo {
+  max-width: 175px; /* Tamaño de imagen ajustado */
+  margin-bottom: 20px; /* Espacio inferior para la imagen */
+  border-radius: 8px; /* Mismo borde que la imagen */
+}
+
+.exp-edu {
+  flex-basis: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exp-edu .resume-details {
+  padding-left: 20px;
 }
 
 .resume-item h3 {
   margin-bottom: 10px;
-}
-
-.resume-item ul {
-  list-style-type: none;
-  padding: 0;
 }
 
 .resume-item ul li {
@@ -246,10 +262,8 @@ body {
   margin-bottom: 0;
 }
 
-.resume-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+#about {
+  padding: 20px;
 }
 
 /*Fin de seccion curriculum*/
@@ -259,7 +273,7 @@ body {
   bottom: 0;
   left: 0;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   width: 100%;
   min-width: 320px;
@@ -268,6 +282,5 @@ body {
   color: #fff;
   font-size: 11px;
   z-index: 9999;
-  
-}
 
+}
