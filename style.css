@@ -18,9 +18,14 @@ body {
   flex-direction: column;
 }
 
+.google {
+  position: static;
+  margin-top: 51px;
+}
+
 .header {
   position: fixed;
-  top: 0;
+  margin-top: 0;
   left: 0;
   display: flex;
   justify-content: space-between;
@@ -119,8 +124,19 @@ body {
 
 /* End Menu Icon & Navbar Styles */
 
+.redicon span {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin-right: 7px;
+  background-position: center;
+  vertical-align: middle;
+  padding: 0.25rem;
+}
+
+
 .mainText {
-  margin-top: 70px;
+  margin-top: 30px;
   font-size: 2.2rem;
   color: #ffffff;
   text-align: center;
@@ -134,7 +150,7 @@ body {
   font-size: 0.75em;
   padding: 1.5em 1em;
   width: 55em;
-  height: 35em;
+  height: 55em;
   margin: 0 auto;
   margin-top: 45px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -188,14 +204,14 @@ body {
   float: left;
   line-height: 1.5em;
   color: #eee;
-  font-size: 1.5  em;
+  font-size: 1.5 em;
 }
 
 .text {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  padding-top: 30px;
+  padding-top: 40px;
   font-size: 250%;
 }
 
@@ -206,10 +222,12 @@ body {
 .curriculum-container {
   padding: 30px;
 }
+
 .curriculum {
   margin: 50px auto;
   max-width: 800px;
-  padding: 20px 30px; /* Ajuste del padding */
+  padding: 20px 30px;
+  /* Ajuste del padding */
   background-color: #333;
   border-radius: 8px;
   font-size: 2em;
@@ -234,9 +252,12 @@ body {
 }
 
 .resume-photo {
-  max-width: 175px; /* Tamaño de imagen ajustado */
-  margin-bottom: 20px; /* Espacio inferior para la imagen */
-  border-radius: 8px; /* Mismo borde que la imagen */
+  max-width: 175px;
+  /* Tamaño de imagen ajustado */
+  margin-bottom: 20px;
+  /* Espacio inferior para la imagen */
+  border-radius: 8px;
+  /* Mismo borde que la imagen */
 }
 
 .exp-edu {
