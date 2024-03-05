@@ -224,6 +224,7 @@ body {
 }
 
 .curriculum {
+  display:block;
   margin: 50px auto;
   max-width: 800px;
   padding: 20px 30px;
@@ -232,8 +233,6 @@ body {
   border-radius: 8px;
   font-size: 2em;
   color: #fff;
-
-  /*Poner un display:flex para poder manejar los elementos mas faiclmente*/
 }
 
 .resume h2 {

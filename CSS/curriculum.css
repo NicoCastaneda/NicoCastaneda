@@ -1,0 +1,99 @@
+  .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #333;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  header {
+      margin-bottom: 30px;
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+  }
+
+  .header-content {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: #fff;
+  }
+
+  .contact-info {
+      list-style-type: none;
+      padding: 0;
+  }
+
+  .main-content {
+      color: #fff;
+      font-size: 150%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+
+
+  .column {
+      margin-right: 20px;
+  }
+
+  .column-left {
+      flex:2;
+      min-width: 5px;
+padding-left: 25px
+  }
+
+  .column-right {
+    margin-top: 20px;
+      padding-left: 25px;
+      flex: 1;
+      border-left: 1px solid #ccc;
+
+  }
+
+  .column:last-child {
+      margin-right: 0;
+  }
+
+  section {
+      margin-bottom: 40px;
+  }
+
+  h3 {
+      margin-bottom: 10px;
+      font-weight: bolder;
+      font-size: large;
+  }
+
+  .divider {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      border: 0;
+      border-top: 1px solid #ccc;
+  }
+
+  .skill {
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: 1px;
+  }
+  
+  .skill-bar {
+    background-color: #ffffff;
+    height: 10px;
+    border-radius: 5px;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    background-color: rgb(112, 231, 112);
+    border-radius: 5px;
+  }
+  
