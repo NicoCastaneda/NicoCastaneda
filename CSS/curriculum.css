@@ -23,6 +23,10 @@
       color: #fff;
   }
 
+  .header-content.h2{
+    font-size: 5px;
+  }
+
   .contact-info {
       list-style-type: none;
       padding: 0;
@@ -30,7 +34,7 @@
 
   .main-content {
       color: #fff;
-      font-size: 150%;
+      font-size: 180%;
       display: flex;
       justify-content: space-between;
   }
