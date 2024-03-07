@@ -1,7 +1,6 @@
 .menu_contacto{
     display: flex;
-    width: 600px;
-    height: 430px;
+    height: 250px;
 }
 
 .menu_contacto img{
@@ -14,7 +13,7 @@
 
 .menu_contacto img:hover{
 cursor: crosshair;
-width: 250px;
+width: 100px;
 opacity: 1;
 filter: contrast(120%);
 

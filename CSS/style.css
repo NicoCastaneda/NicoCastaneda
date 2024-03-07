@@ -150,7 +150,7 @@ body {
   font-family: monospace;
   font-size: 0.75em;
   padding: 1.5em 1em;
-  width: 55em;
+  width: 50%;
   height: 55em;
   margin: 0 auto;
   margin-top: 45px;
@@ -219,79 +219,6 @@ body {
 
 /*Fin seccion contacto*/
 
-
-/*Seccion curriculum*/
-.curriculum-container {
-  padding: 30px;
-}
-
-.curriculum {
-  display:block;
-  margin: 50px auto;
-  max-width: 800px;
-  padding: 20px 30px;
-  /* Ajuste del padding */
-  background-color: #333;
-  border-radius: 8px;
-  font-size: 2em;
-  color: #fff;
-}
-
-.resume h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.resume-item {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.resume-photo {
-  max-width: 175px;
-  /* Tamaño de imagen ajustado */
-  margin-bottom: 20px;
-  /* Espacio inferior para la imagen */
-  border-radius: 8px;
-  /* Mismo borde que la imagen */
-}
-
-.exp-edu {
-  flex-basis: calc(50% - 20px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.exp-edu .resume-details {
-  padding-left: 20px;
-}
-
-.resume-item h3 {
-  margin-bottom: 10px;
-}
-
-.resume-item ul li {
-  margin-bottom: 5px;
-}
-
-.resume-item ul li:last-child {
-  margin-bottom: 0;
-}
-
-#about {
-  padding: 20px;
-}
-
-/*Fin de seccion curriculum*/
-
 /* Footer */
 .footer {
   bottom: 0;
@@ -306,5 +233,12 @@ body {
   color: #fff;
   font-size: 11px;
   z-index: 9999;
-
 }
+/* End Footer */
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .terminal-loader {
+    width: 85%;
+  }
+} 
