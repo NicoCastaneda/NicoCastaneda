@@ -124,6 +124,7 @@ body {
 
 /* End Menu Icon & Navbar Styles */
 
+/*Seccion contacto*/
 .redicon span {
   display: inline-block;
   width: 45px;
@@ -153,6 +154,7 @@ body {
   height: 55em;
   margin: 0 auto;
   margin-top: 45px;
+  margin-bottom: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: relative;
@@ -215,7 +217,7 @@ body {
   font-size: 250%;
 }
 
-/*Fin de css Animación loading status*/
+/*Fin seccion contacto*/
 
 
 /*Seccion curriculum*/
