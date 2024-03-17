@@ -1,206 +1,280 @@
+@media screen and (min-width: 700px) {
+  .container{
+    margin: 40px 70px !important;
+  }
+  .background-image{
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container{
+    margin: 40px 80px !important;
+  }
+  .background-image{
+    height: 550px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container{
+    margin: 40px 100px !important;
+  }
+  .background-image{
+    height: 600px ;
+  }
+
+}
+
+.container {
+  margin: 40px 50px;
+
+  background-color: #1e1f20;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.background-image {
+  border-radius: 8px;
+  padding: 0%;
+}
+
+header {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header-content {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  color: #fff;
+}
+
+.contact-info {
+  list-style-type: none;
+  padding: 0;
+}
+
+.main-content {
+  color: #fff;
+  font-size: 180%;
+  justify-content: space-between;
+  padding: 20px;
+  display: none;
+
+}
+
+.column {
+  margin-right: 20px;
+}
+
+.column-left {
+  flex: 2;
+  min-width: 5px;
+  padding-left: 25px
+}
+
+.column-right {
+  padding-left: 25px;
+  flex: 1;
+  border-left: 1px solid #ccc;
+
+}
+
+.column:last-child {
+  margin-right: 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.divider {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+.skill-bar {
+  background-color: #ffffff;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color: rgb(112, 231, 112);
+  border-radius: 5px;
+}
+
+/*boton about me*/
+button.learn-more {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  width: 15rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  box-shadow: 0 0 5px 1px white;
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 4rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.7rem 0;
+  margin: 0 0 0 1.85rem;
+  color: rgba(255, 255, 255, 0.493);
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  top: 0.1px;
+}
+
+button:hover .circle {
+  width: 100%;
+  box-shadow: 0 0 10px 2px white;
+}
+
+button:hover .button-text {
+  transform: translate(-2rem, 0);
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(12rem, 0);
+}
+
+button:active .circle .icon.arrow {
+  transform: translate(11.5rem, 0);
+  transition: all 0.3s;
+}
+
+button:active .circle {
+  transform: scale(0.9);
+  transition: all 0.1s;
+  box-shadow: 0 0 5px 0.5px white;
+}
+
+button:hover .button-text {
+  color: #fff;
+}
+
+button:active .button-text {
+  color: rgba(255, 255, 255, 0.459);
+}
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 500px) {
   .container {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #333;
-      border-radius: 8px;
-      display: flex;
-      flex-direction: column;
+    margin: 15px;
+    padding: 0%;
   }
 
-  header {
-      margin-bottom: 30px;
-      height: 300px;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-  }
+  .background-image {
+    height: 300px;
+    border-radius: 8px;
 
-  .header-content {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      color: #fff;
-  }
-
-  .contact-info {
-      list-style-type: none;
-      padding: 0;
   }
 
   .main-content {
-      color: #fff;
-      font-size: 180%;
-      display: flex;
-      justify-content: space-between;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 5%;
   }
-
-
 
   .column {
-      margin-right: 20px;
+    margin-right: 0;
+    /* Eliminación del margen entre columnas */
   }
 
-  .column-left {
-      flex:2;
-      min-width: 5px;
-padding-left: 25px
+  .column-left,
+  .column-right {
+    margin: 0;
+    /* Eliminación del margen entre columnas */
+    padding-left: 0;
+    /* Eliminación del padding izquierdo */
+    border-left: none;
+    /* Eliminación del borde izquierdo */
+    flex: 1;
+    /* Establece que ambas columnas ocupen el mismo espacio */
   }
 
   .column-right {
     margin-top: 20px;
-      padding-left: 25px;
-      flex: 1;
-      border-left: 1px solid #ccc;
-
+    /* Restauración del margen superior para la columna derecha */
   }
-
-  .column:last-child {
-      margin-right: 0;
-  }
-
-  section {
-      margin-bottom: 40px;
-  }
-
-  h3 {
-      margin-bottom: 10px;
-      font-weight: bolder;
-      font-size: large;
-  }
-
-  .divider {
-      margin-top: 40px;
-      margin-bottom: 40px;
-      border: 0;
-      border-top: 1px solid #ccc;
-  }
-
-  .skill {
-    margin-bottom: 10px;
-  }
-  
-  .skill-name {
-    font-weight: bold;
-    margin-bottom: 1px;
-  }
-  
-  .skill-bar {
-    background-color: #ffffff;
-    height: 10px;
-    border-radius: 5px;
-  }
-  
-  .skill-progress {
-    height: 100%;
-    background-color: rgb(112, 231, 112);
-    border-radius: 5px;
-  }
-
-  /*boton about me*/
-  button.learn-more {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    background: transparent;
-    padding: 0;
-    font-size: inherit;
-    font-family: inherit;
-    width: 15rem;
-    height: auto;
-  }
-  
-  button.learn-more .circle {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    box-shadow: 0 0 5px 1px white;
-    position: relative;
-    display: block;
-    margin: 0;
-    width: 3rem;
-    height: 4rem;
-    background: #282936;
-    border-radius: 1.625rem;
-  }
-  
-  button.learn-more .circle .icon {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #fff;
-  }
-  
-  button.learn-more .circle .icon.arrow {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
-    background: none;
-  }
-  
-  button.learn-more .circle .icon.arrow::before {
-    position: absolute;
-    content: "";
-    top: -0.29rem;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
-    transform: rotate(45deg);
-  }
-  
-  button.learn-more .button-text {    
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0.7rem 0;
-    margin: 0 0 0 1.85rem;
-    color: rgba(255, 255, 255, 0.493);
-    font-weight: 700;
-    line-height: 1.6;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  
-  button:hover .circle {
-    width: 100%;
-    box-shadow: 0 0 10px 2px white;
-  }
-  
-  button:hover .button-text {
-    transform: translate(-2rem, 0);
-  }
-  
-  button:hover .circle .icon.arrow {
-    background: #fff;
-    transform: translate(12rem, 0);
-  }
-  
-  button:active .circle .icon.arrow {
-    transform: translate(11.5rem, 0);
-    transition: all 0.3s;
-  }
-  
-  button:active .circle {
-    transform: scale(0.9);
-    transition: all 0.1s;
-    box-shadow: 0 0 5px 0.5px white;
-  }
-  
-  button:hover .button-text {
-    color: #fff;
-  }
-  
-  button:active .button-text {
-    color: rgba(255, 255, 255, 0.459);
-  }
-  
+}

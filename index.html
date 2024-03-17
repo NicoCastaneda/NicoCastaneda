@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="CSS/curriculum.css">
   <link rel="stylesheet" href="CSS/menuContacto.css">
   <!--END CSS STYLES & Media Queries   -->
-
+  <script src="JS/script.js"></script>
 
   <!-- Script de traducción -->
   <script type="text/javascript">
@@ -55,28 +55,31 @@
 
   <!-- Curriculum -->
   <div class="container">
-    <header style="background-image: url('assets/images/fotoprueba.png');">
+    <header class="background-image" style="background-image: url('assets/images/fotoprueba.png');">
       <div class="header-content">
         <h1 style="font-size: 380%;">Nicolás Castañeda</h1>
         <h2 style="font-size: 200%; font-weight: lighter;">Estudiante de Ingeniería Informática</h2>
         <h2 style="font-size: 200%; font-weight: lighter;">Scrum Master & desarrollador de FraterniU</h2>
+        <br><br>
+
+        <button class="learn-more" onclick="toggleAboutMe()" id="aboutMeButton">
+          <span aria-hidden="true" class="circle">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">Sobre mí</span>
+        </button>
 
       </div>
     </header>
     <div class="main-content">
       <div class="column column-left">
         <section class="profile">
-          <button class="learn-more">
-            <span aria-hidden="true" class="circle">
-            <span class="icon arrow"></span>
-            </span>
-            <span class="button-text">Sobre mí</span>
-          </button>
-          <br><br><br>
-          <p>Me apasiona el desarrollo y la creación de soluciones tecnológicas que impacten positivamente
-            en la vida de las personas. Me considero una persona proactiva, autodidacta y con habilidades para el
-            trabajo
-            en equipo.</p>
+        
+          
+            <p>Me apasiona el desarrollo y la creación de soluciones tecnológicas que impacten positivamente
+              en la vida de las personas. Me considero una persona proactiva, autodidacta y con habilidades para el
+              trabajo
+              en equipo.</p>
         </section>
         <section class="experience">
           <h3>Experiencia Laboral</h3>
@@ -96,6 +99,7 @@
 
 
         </section>
+
       </div>
       <div class="column column-right">
         <section class="education">
@@ -199,43 +203,46 @@
           </ul>
 
           <ul>
-           <br><li><h4> Idiomas:</h4></li>
+            <br>
+            <li>
+              <h4> Idiomas:</h4>
+            </li>
             <li>Español: Nativo</li>
             <li>Inglés: B2</li>
           </ul>
-          
+
         </section>
       </div>
     </div>
   </div>
- <!--Curriculum End -->
+  <!--Curriculum End -->
 
- <!-- CONTACTO-->
- <div class="terminal-loader">
-  <div class="terminal-header">
-    <div class="terminal-title">Nicolás Mauricio Castañeda Oliveros</div>
-    <div class="terminal-controls">
-      <div class="control close"></div>
-      <div class="control minimize"></div>
-      <div class="control maximize"></div>
+  <!-- CONTACTO-->
+  <div class="terminal-loader">
+    <div class="terminal-header">
+      <div class="terminal-title">Nicolás Mauricio Castañeda Oliveros</div>
+      <div class="terminal-controls">
+        <div class="control close"></div>
+        <div class="control minimize"></div>
+        <div class="control maximize"></div>
+      </div>
     </div>
-  </div>
 
-  
-  <div class="text">Encuéntrame en:</div> 
+
+    <div class="text">Encuéntrame en:</div>
     <br><br>
-<!--Menu imagenes Contacto-->
-<section class="menu_contacto">
-  <img src="./assets/images/fondoLinkedin.jpeg" alt="">
-  <img src="./assets/images/fondoInstagram.jpeg" alt="">
-  <img src="./assets/images/fondoGithub.jpg" alt="">
-  <img src="./assets/images/fondoWhatsapp.jpeg" alt="">
-  <img src="./assets/images/fondoGmail.jpg" alt="">
-  
+    <!--Menu imagenes Contacto-->
+    <section class="menu_contacto">
+      <img src="./assets/images/fondoLinkedin.jpeg" alt="">
+      <img src="./assets/images/fondoInstagram.jpeg" alt="">
+      <img src="./assets/images/fondoGithub.jpg" alt="">
+      <img src="./assets/images/fondoWhatsapp.jpeg" alt="">
+      <img src="./assets/images/fondoGmail.jpg" alt="">
 
-</section>
-<!--Menu imagenes Contacto End-->
-   <!-- <ul>
+
+    </section>
+    <!--Menu imagenes Contacto End-->
+    <!-- <ul>
       <li><a href="" class="linkedin redicon" style="color: rgb(152, 255, 152);"><span class="icon-card LinkedIn"><img
               src="./assets/icons/LinkedIn.svg" alt="linkedin"></span>LinkedIn</a></li>
       <li><a href="" class="instagram redicon" style="color: rgb(152, 255, 152);"><span
@@ -247,8 +254,8 @@
       <li><a href="" class="mail redicon" style="color: rgb(152, 255, 152);"><span class="icon-card mail"><img
               src="./assets/icons/Email.svg" alt="mail"></span>ncasaneda@gmail.com</a></li>
     </ul>-->
-</div>
-<!-- Fin CONTACTO-->
+  </div>
+  <!-- Fin CONTACTO-->
 
 
 

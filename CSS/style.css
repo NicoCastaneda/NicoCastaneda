@@ -14,7 +14,7 @@ html {
 
 body {
   background: rgb(15,15,15);
-  background: linear-gradient(180deg, rgba(15,15,15,1) 0%, rgba(0,5,32,1) 39%, rgba(57,57,70,1) 100%);
+  background: linear-gradient(180deg, rgba(15,15,15,1) 0%, rgba(0,5,32,1) 39%, rgb(42, 42, 51) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
@@ -36,9 +36,10 @@ body {
   width: 100%;
   min-width: 320px;
   height: 60px;
-  background-color: #333;
+  background-color: #1e1f20;
   padding: 0 20px;
   z-index: 9999;
+  border-bottom: #505050 1px solid;
 }
 
 .header-title {
@@ -232,10 +233,11 @@ body {
   width: 100%;
   min-width: 320px;
   height: 60px;
-  background-color: #333;
+  background-color: #1e1f20;
   color: #fff;
   font-size: 11px;
   z-index: 9999;
+  border-top: #505050 1px solid;
 }
 /* End Footer */
 
