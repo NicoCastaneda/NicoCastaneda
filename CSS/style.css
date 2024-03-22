@@ -142,10 +142,17 @@ body {
 
 .mainText {
   margin-top: 30px;
+  margin-left: auto; /* Se añade margen izquierdo automático */
+  margin-right: auto; /* Se añade margen derecho automático */
   font-size: 2.2rem;
   color: #ffffff;
-  text-align: center;
+  text-align: center; /* Se mantiene alineación centrada */
 }
+
+.maintext-text{
+  text-align: left; /* Se mantiene la alineación justificada hacia la izquierda */
+}
+
 
 .terminal-loader {
   border: 0.1em solid #333;
