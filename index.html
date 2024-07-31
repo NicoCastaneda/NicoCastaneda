@@ -1,270 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="" type="">
-  <title>nicocastaneda.com</title>
-
-  <!-- CSS STYLES & Media Queries   -->
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/curriculum.css">
-  <link rel="stylesheet" href="CSS/menuContacto.css">
-  <!--END CSS STYLES & Media Queries   -->
-  <script src="JS/script.js"></script>
-
-  <!-- Script de traducción -->
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'en,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true }, 'google_translate_element');
-    }
-  </script>
-
-  <script type="text/javascript"
-    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <!-- Fin de script de traducción -->
-
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>nicocastaneda.com</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + main styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/imgs/avatar.jpg" type="image/x-icon">
 </head>
-
-<body class="body">
-
-  <header class="header">
-    <!-- Título -->
-    <h1 class="header-title">nicocastaneda.com</h1>
-
-    <!-- Toggle del menú -->
-    <div id="menuToggle" class="mobile-menu-container--image">
-      <input id="checkbox" type="checkbox">
-      <label class="toggle" for="checkbox">
-        <div class="bar bar--top"></div>
-        <div class="bar bar--middle"></div>
-        <div class="bar bar--bottom"></div>
-      </label>
-    </div>
-  </header>
-  <!--1. Header End -->
-
-  <div id="google_translate_element" class="google">Translate</div>
-
-  <main class="mainText">
-    <div class="maintext-text">
-      <h1>Soy Nicolás Castañeda</h1>
-      <br>
-      <h3>Estudiante de Ingeniería Informática</h3>
-      <h3>Scrum Master & Desarrollador de FraterniU</h3>
-    </div>
-  </main>
-
-  <!-- Curriculum -->
-  <div class="container">
-    <header class="background-image" style="background-image: url('assets/images/fotoprueba.png');">
-      <div class="header-content">
-        
-        <button class="learn-more" onclick="toggleAboutMe()" id="aboutMeButton">
-          <span aria-hidden="true" class="circle">
-            <span class="icon arrow"></span>
-          </span>
-          <span class="button-text">Sobre mí</span>
-        </button>
-
-      </div>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/nicolás-mauricio-castañeda-oliveros-4b6058302/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="mailto:ncasaneda@gmail.com" target="_blank"><i class="ti-email" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/nico_castaneda2/" target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/NicoCastaneda" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>  
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h3 class="header-title">Nicolás Castañeda</h3>
+                <h6 class="header-mono" >Computer engineering student | Developer</h6>
+                <button id="downloadCV" class="btn btn-dark btn-rounded"><i class="ti-download"></i>&nbsp;&nbsp;&nbsp;Download CV</button>
+            </div>
+        </div>
     </header>
-    <div class="main-content">
-      <div class="column column-left">
-        <section class="profile">
-
-
-          <p>Me apasiona el desarrollo y la creación de soluciones tecnológicas que impacten positivamente
-            en la vida de las personas. Me considero una persona proactiva, autodidacta y con habilidades para el
-            trabajo
-            en equipo.</p>
-        </section>
-        <section class="experience">
-          <h3>Experiencia Laboral</h3>
-          <ul>
-            <li style="list-style-type:square">Programa PAT Unisabana:
-              <ul style="margin-left: 15px;">
-                <li style="margin-left: 20px; list-style-type:disc; margin-top: 10px;">Apoyo logístico en eventos,
-                  conferencias y Open Campus.</li>
-                <li style="margin-left: 20px; list-style-type:disc;">Autoservicio, apoyo y caja en los restaurantes de
-                  la universidad.</li><br>
-              </ul>
-            <li style="list-style-type:square">Scrum Master (FraterniU)</li>
-          </ul>
-        </section>
-        <section class="projects">
-          <h3>Proyectos Destacados</h3>
-
-
-        </section>
-
-      </div>
-      <div class="column column-right">
-        <section class="education">
-          <h3>Educación</h3>
-          <ul>
-            <li style="list-style-type:square">Educación Básica: Bachiller (2021).</li>
-            <br>
-            <li style="list-style-type:square">Pregrado: 5° Semestre (Ingeniería Informática).</li>
-          </ul>
-        </section>
-        <hr class="divider">
-        <section class="certifications">
-          <h3>Certificados</h3>
-          <ul>
-            <li style="list-style-type:square"><a href="" style="color:  rgb(152, 255, 152);">CISCO - Networking
-                Essentials</a></li>
-          </ul>
-
-        </section>
-        <hr class="divider">
-        <section class="skills">
-          <h3>Habilidades Técnicas</h3>
-          <ul>
-            <ul>
-              <h4>Lenguajes de Programación: </h4>
-              <br>
-              <li>
-                <div class="skill">
-                  <div class="skill-name">JAVA</div>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 55%;"></div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill">
-                  <div class="skill-name">Python</div>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 50%;"></div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill">
-                  <div class="skill-name">Kotlin</div>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 35%;"></div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill">
-                  <div class="skill-name">JavaScript</div>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 40%;"></div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill">
-                  <div class="skill-name">SQL</div>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 60%;"></div>
-                  </div>
-                </div>
-              </li>
-
-            </ul>
-          </ul>
-          <ul>
-            <br>
-            <ul>
-              <ul>
-                <h4>Herramientas y Tecnologías: </h4>
-                <br>
-                <li>
-                  <div class="skill">
-                    <div class="skill-name">...</div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 55%;"></div>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="skill">
-                    <div class="skill-name">...</div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 50%;"></div>
-                    </div>
-                  </div>
-                </li>
-
-
-              </ul>
-            </ul>
-          </ul>
-
-          <ul>
-            <br>
-            <li>
-              <h4> Idiomas:</h4>
-            </li>
-            <li>Español: Nativo</li>
-            <li>Inglés: B2</li>
-          </ul>
-
-        </section>
-      </div>
-    </div>
-  </div>
-  <!--Curriculum End -->
-
-  <!-- CONTACTO-->
-  <div class="terminal-loader">
-    <div class="terminal-header">
-      <div class="terminal-title">Nicolás Mauricio Castañeda Oliveros</div>
-      <div class="terminal-controls">
-        <div class="control close"></div>
-        <div class="control minimize"></div>
-        <div class="control maximize"></div>
-      </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Projects</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Nicolás Castañeda</h5>
+                        <div class="brand-subtitle">Student | Developer</div>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-9 about-card">
+                <h3 class="font-weight-light">Who am I ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">Fifth semester student of Computer Engineering at the Universidad de la Sabana in Chia, Colombia, with interest in the development of innovative solutions, artificial intelligence and the implementation of agile methodologies such as SCRUM.</h5>
+                <p class="mt-20">In addition to my technical skills, I have a solid foundation in communication, teamwork and adaptability, competencies that I have cultivated during my participation as a PAT student at the University. In this role, I collaborate in various activities related to self-service, support and checkout in university restaurants, which has given me valuable experience in the work environment.
+                    I am always willing to learn and looking for new opportunities to expand my knowledge and live enriching experiences, for this reason I am part of the CIS research hotbed of the Faculty of Engineering of La Sabana, currently I play the role of researcher, actively contributing to the development of various projects.
+                    My commitment to continuous learning and my dedication to achieving goals drive me to overcome challenges and grow both personally and professionally. I am eager to continue developing and contribute to the success of future projects.</p>
+            </div>
+            <div class="col-lg-3 about-card">
+                <h3 class="font-weight-light">Personal Info</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                
+                    <li><span>Email</span> : ncasaneda@gmail.com</li>
+                    <li><span>Phone</span> : + (57) 3058704044</li>
+                    <li><span>Address</span> :  Bogotá D.C. Colombia</li>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/nicolás-mauricio-castañeda-oliveros-4b6058302/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="mailto:ncasaneda@gmail.com" target="_blank"><i class="ti-email" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/nico_castaneda2/" target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/NicoCastaneda" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                </ul>  
+            </div>
+        </div>
     </div>
 
-
-    <div class="text">Encuéntrame en:</div>
-    <br><br>
-    <!--Menu imagenes Contacto-->
-    <section class="menu_contacto">
-      <img src="./assets/images/fondoLinkedin.jpeg" alt="">
-      <img src="./assets/images/fondoInstagram.jpeg" alt="">
-      <img src="./assets/images/fondoGithub.jpg" alt="">
-      <img src="./assets/images/fondoWhatsapp.jpeg" alt="">
-      <img src="./assets/images/fondoGmail.jpg" alt="">
-
-
+    <!--Resume Section-->
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Experience</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">01/2024 - Present</h6>
+                            <P>Support service</P>
+                            <P class="subtitle">Part of the PAT program of the University of La Sabana, collaboration in different restaurants sharing with clients and in cash management.</P>
+                            <hr>
+                            <h6 class="title text-danger">2023 - Present</h6>
+                            <P>SCRUM Master & Developer of FraterniU</P>
+                            <P class="subtitle">Project underway, I am part of the creation and development process of FraterniU, using the SCRUM methodology</P>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Education</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2022 - Present</h6>
+                            <P>degree in computer engineering from the University of La Sabana</P>
+                            <P class="subtitle"></P>
+                            <hr>
+                            <h6 class="title text-danger">2021</h6>
+                            <P>Bachelor's degree at Gimnasio Campestre San Francisco de Sales in Cota, Colombia, with honors of academic excellence</P>
+                            <P class="subtitle"></P>
+                            <hr>
+                              
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Skills</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h6>HTML &amp; CSS</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Java</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Python</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>SQL</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>React</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Figma</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Languages</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h6>Spanish (native)</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>English</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!--Menu imagenes Contacto End-->
-    <!-- <ul>
-      <li><a href="" class="linkedin redicon" style="color: rgb(152, 255, 152);"><span class="icon-card LinkedIn"><img
-              src="./assets/icons/LinkedIn.svg" alt="linkedin"></span>LinkedIn</a></li>
-      <li><a href="" class="instagram redicon" style="color: rgb(152, 255, 152);"><span
-            class="icon-card instagram"><img src="./assets/icons/Vector.svg" alt="Instagram"></span>Instagram</a></li>
-      <li><a href="" class="github redicon" style="color: rgb(152, 255, 152);"><span class="icon-card github"><img
-              src="./assets/icons/GitHub.svg" alt="github"></span>GitHub</a></li>
-      <li><a href="" class="phone redicon" style="color: rgb(152, 255, 152);"><span class="icon-card phone"><img
-              src="./assets/icons/Phone.svg" alt="phone"></span>Teléfono: +57 3058704044</a></li>
-      <li><a href="" class="mail redicon" style="color: rgb(152, 255, 152);"><span class="icon-card mail"><img
-              src="./assets/icons/Email.svg" alt="mail"></span>ncasaneda@gmail.com</a></li>
-    </ul>-->
-  </div>
-  <!-- Fin CONTACTO-->
+
+    <section class="section bg-dark text-center">
+        <h2 class="MQTitle">Main Qualities</h2>
+        <div class="container">
+            
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="row ">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><img src="assets/imgs/teamworkIcon.png" alt="" class="MQIcon"></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="MQnumber">95%</h1>
+                            <p class="text-light mb-1">Teamwork</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><img src="assets/imgs/comunicationIcon.png" alt="" class="MQIcon"></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="MQnumber">75%</h1>
+                            <p class="text-light mb-1">Communication</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><img src="assets/imgs/critThinkIcon.png" alt="" class="MQIcon"></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="MQnumber">80%</h1>
+                            <p class="text-light mb-1">Critical thinking</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><img src="assets/imgs/adaptationIcon.png" alt="" class="MQIcon"></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="MQnumber">70%</h1>
+                            <p class="text-light mb-1">Adaptation to new environments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    
 
+    <section class="section" id="blog">
+        <div class="container">
+            <h2 class="mb-5">My <span class="text-danger">Projects</span></h2>
+            <div class="row">
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog1.jpg" alt="project image">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Consectetur adipisicing elit</h6>
 
+                        <p class="post-details">
+                            <a href="#">By: ...</a>
+                        </p>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2024 Nicolás Castañeda</p>
-  </footer>
-  <!-- Footer End -->
+                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
+                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
+
+                        <a href="#" class="read-more">View on GitHub <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> nicocastaneda.com 
+            </p>
+        </div>
+    </footer>
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- js -->
+    <script src="assets/js/script.js"></script>
+
 </body>
-
 </html>
