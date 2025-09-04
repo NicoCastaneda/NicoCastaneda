@@ -59,7 +59,7 @@ document.getElementById("downloadCV").addEventListener("click", function() {
     // Crear un enlace <a> temporal
     var enlaceDescarga = document.createElement("a");
     // Configurar el enlace con la ubicación del archivo a descargar
-    enlaceDescarga.href = "Nicolás Castañeda.pdf";
+    enlaceDescarga.href = "Hoja_de_vida (2).pdf";
     // Especificar el nombre del archivo a descargar
     enlaceDescarga.download = "nicocastanedaCV.pdf";
     // Simular clic en el enlace para iniciar la descarga

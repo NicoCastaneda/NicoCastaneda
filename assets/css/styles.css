@@ -3011,8 +3011,8 @@ fieldset:disabled a.btn {
 
 .btn-dark {
   color: #fff;
-  background-color: #101E59;
-  border-color: #101E59;
+  background-color: #0097bd;
+  border-color: #000;
 }
 
 .btn-dark:hover {
@@ -11504,10 +11504,10 @@ pre .code {
 
 .header {
   position: relative;
-  height: 80vh;
-  min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
+  height: 30vh;
+  min-height: 450px;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../imgs/banner.png);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../imgs/banner.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
